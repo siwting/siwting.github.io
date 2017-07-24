@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>排序规则不一致，导致查询特别慢 - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#MySql">MySql</a>&nbsp;&#187;&nbsp;排序规则不一致，导致查询特别慢
+    <span class="updated">Page Updated&nbsp;
+      2017-06-12 00:00
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">排序规则不一致，导致查询特别慢</div>
+
+  <h1 id="_1">查询语句</h1>
+<div class="hlcode"><pre><span class="n">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="n">DISTINCT</span> <span class="n">ud</span><span class="p">.</span><span class="n">DEV_CODE</span><span class="p">)</span><span class="n">com</span><span class="p">,</span><span class="n">uc</span><span class="p">.</span><span class="n">user_id</span> <span class="n">from</span> <span class="n">db_vice_customer_device</span> <span class="n">ud</span>
+        <span class="n">LEFT</span> <span class="n">JOIN</span> <span class="n">db_vice_return_visit</span> <span class="n">r</span> <span class="n">on</span> <span class="n">r</span><span class="p">.</span><span class="n">dev_code</span><span class="o">=</span><span class="n">ud</span><span class="p">.</span><span class="n">dev_code</span> <span class="n">and</span> <span class="n">r</span><span class="p">.</span><span class="n">PHONE_STATE</span><span class="o">=</span><span class="sc">&#39;1&#39;</span> <span class="n">and</span>  <span class="n">to_days</span><span class="p">(</span><span class="n">now</span><span class="p">())</span> <span class="o">-</span> <span class="n">to_days</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">CREATE_TIME</span><span class="p">)</span><span class="o">&lt;=</span><span class="mi">3</span>
+        <span class="n">LEFT</span> <span class="n">JOIN</span> <span class="n">db_vice_bloodpressurexx</span> <span class="n">b</span>  <span class="n">on</span> <span class="n">b</span><span class="p">.</span><span class="n">dev_code</span><span class="o">=</span><span class="n">ud</span><span class="p">.</span><span class="n">dev_code</span> <span class="n">and</span>  <span class="n">to_days</span><span class="p">(</span><span class="n">now</span><span class="p">())</span> <span class="o">-</span> <span class="n">to_days</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">RECEIVE_TIME</span><span class="p">)</span><span class="o">&lt;=</span><span class="mi">3</span> <span class="n">and</span> <span class="n">b</span><span class="p">.</span><span class="err">`</span><span class="n">LEVEL</span><span class="err">`</span><span class="o">=</span><span class="mi">6</span>
+        <span class="n">LEFT</span> <span class="n">JOIN</span>  <span class="n">db_vice_user_custom</span> <span class="n">uc</span> <span class="n">on</span> <span class="n">ud</span><span class="p">.</span><span class="n">customer_id</span><span class="o">=</span><span class="n">uc</span><span class="p">.</span><span class="n">customer_id</span>
+        <span class="n">LEFT</span> <span class="n">JOIN</span> <span class="n">db_vice_customer</span> <span class="n">u</span> <span class="n">on</span> <span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="o">=</span><span class="n">ud</span><span class="p">.</span><span class="n">customer_id</span> <span class="n">and</span> <span class="n">u</span><span class="p">.</span><span class="n">phone</span><span class="o">&gt;</span><span class="err">&#39;&#39;</span> <span class="n">and</span> <span class="n">u</span><span class="p">.</span><span class="n">GROUP_CODE</span><span class="o">!=</span><span class="sc">&#39;8&#39;</span>
+        <span class="n">WHERE</span> <span class="n">r</span><span class="p">.</span><span class="n">DEV_CODE</span> <span class="n">is</span> <span class="n">null</span> <span class="n">and</span> <span class="n">b</span><span class="p">.</span><span class="n">dev_code</span><span class="o">&gt;</span><span class="err">&#39;&#39;</span> <span class="n">and</span>  <span class="n">uc</span><span class="p">.</span><span class="n">customer_id</span><span class="o">&gt;</span><span class="err">&#39;&#39;</span> <span class="n">and</span> <span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="o">&gt;</span><span class="err">&#39;&#39;</span>
+        <span class="n">GROUP</span> <span class="n">BY</span> <span class="n">uc</span><span class="p">.</span><span class="n">user_id</span>
+</pre></div>
+
+
+<blockquote>
+<p>执行超过20分钟，仍没有结束</p>
+</blockquote>
+<h1 id="_2">检测步骤</h1>
+<ol>
+<li>
+<p>检查执行计划</p>
+<blockquote>
+<p>发现都很正常<br />
+<img alt="" src="http://d.pr/i/d7Fs+" /></p>
+</blockquote>
+</li>
+<li>
+<p>检查索引<br />
+索引表用到的都有索引</p>
+</li>
+<li>
+<p>Google<br />
+查到这样一句话：<br />
+<img alt="" src="http://d.pr/i/q8mJ+" /></p>
+</li>
+</ol>
+<p>检查所有用到的表的排序规则，发现确实不一样，有的是utf8_general_ci、有的是utf8mb4_general_ci还有的是latin1_general_ci，把所有的都统一成utf8的，然后执行，20秒结束</p>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2017 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2017-07-24 14:48:39</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

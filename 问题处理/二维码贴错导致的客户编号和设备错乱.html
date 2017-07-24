@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>二维码贴错导致的客户编号和设备错乱 - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#问题处理">问题处理</a>&nbsp;&#187;&nbsp;二维码贴错导致的客户编号和设备错乱
+    <span class="updated">Page Updated&nbsp;
+      2017-07-19 00:00
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">二维码贴错导致的客户编号和设备错乱</div>
+
+  <h1 id="_1">问题描述：</h1>
+<p>864944030468361这台设备系统显示是 K00001838197(李绍先)，但是实际这个设备是K00002835263(张文祥)在使用，现在这个设备检修要寄给用户，但是设备和对应的客户编号不对应</p>
+<h1 id="_2">处理措施：</h1>
+<h2 id="_3">确认问题，错乱的客户和受影响的客户</h2>
+<ol>
+<li>在慢病系统的首页或者订单管理系统，查询客户编号，例子中为K00001838197和K00002835263，查询结果为：</li>
+</ol>
+<blockquote>
+<p>客户编号    系统设备号 客户收到的实际设备号<br />
+K00001838197    864944030468361<br />
+864944030519973 未知<br />
+K00002835263    864944030462034 864944030468361</p>
+</blockquote>
+<p>判定系统实际的用户设备号和系统中不同<br />
+2. 根据已经查到的设备号，确认受影响的用户的情况。在首页中查询已经出现的设备号，格式在什么人名下，发现864944030462034这个错误的设备号有3个不同的订单和不同的购买人</p>
+<blockquote>
+<p>系统设备号 系统客户编号  实际的设备号<br />
+864944030462034 K00001178642    未知<br />
+864944030462034 K00000056320    未知<br />
+864944030462034 K00002835263    未知</p>
+</blockquote>
+<p>确认问题。描述为：864944030462034这个设备号有三个订单，并且是三个订单购买人为不同人，确认是二维码贴错并确认受影响的客户为4人，其中确认一个人的实际设备好，即K00002835263实际的设备号为864944030468361</p>
+<h2 id="_4">处理措施</h2>
+<p>补充剩下的三个用户的实际的设备号，重新绑定设备号并把退回来的864944030468361绑定在K00002835263名下</p>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2017 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2017-07-24 14:48:39</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

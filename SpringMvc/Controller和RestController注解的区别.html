@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>Controller和RestController注解的区别 - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#SpringMvc">SpringMvc</a>&nbsp;&#187;&nbsp;Controller和RestController注解的区别
+    <span class="updated">Page Updated&nbsp;
+      2017年7月20日11:11:28
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">Controller和RestController注解的区别</div>
+
+  <p>Controller:  标识一个Spring类是Spring MVC controller处理器;<br />
+RestController:  是Controller和ResponseBody的结合体，两个标注合并起来的作用;</p>
+<h2 id="_1">示例</h2>
+<div class="hlcode"><pre> <span class="err">@</span><span class="n">Controller</span>
+ <span class="err">@</span><span class="n">ResponseBody</span>
+ <span class="n">public</span> <span class="n">class</span> <span class="n">ControllerA</span> <span class="p">{</span> <span class="p">}</span>
+
+ <span class="err">@</span><span class="n">RestController</span>
+ <span class="n">public</span> <span class="n">class</span> <span class="n">ControllerA</span> <span class="p">{</span> <span class="p">}</span>
+</pre></div>
+
+
+<h2 id="_2">项目中遇到的问题</h2>
+<p>在开发用来给下拉框赋值的微信信息查询功能的时候，给Controller添加的注释写成了： <br />
+@Controller但是没有添加@ResponseBody,结果导致出现了一个很奇葩的问题，前台会<br />
+一直请求后台，而且每次都请求成功了Σ( ° △ °|||)︴，经历了一番痛苦的思索之后，<br />
+发现是WxInfoAction的SpringMvc注解添加错误了，只写了一个@Controller，迅速改<br />
+成@RestController之后，OK了；</p>
+<p><strong> 注解有风险，使用需谨慎！！</strong></p>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2017 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2017-07-24 14:48:39</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

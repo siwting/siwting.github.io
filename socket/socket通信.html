@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>Socket通信原理 - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#socket">socket</a>&nbsp;&#187;&nbsp;Socket通信原理
+    <span class="updated">Page Updated&nbsp;
+      2017-07-19 09:05:09
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">Socket通信原理</div>
+
+  <h1 id="socket">Socket是什么呢？</h1>
+<p>Socket是应用层与TCP/IP协议族通信的中间软件抽象层，它是一组接口。在设计模式中，Socket其实就是一个门面模式，它把复杂的TCP/IP协议族隐藏在Socket接口后面，对用户来说，一组简单的接口就是全部，让Socket去组织数据，以符合指定的协议。<br />
+  如：一个生活中的场景。你要打电话给一个朋友，先拨号，朋友听到电话铃声后提起电话，这时你和你的朋友就建立起了连接，就可以讲话了。等交流结束，挂断电话结束此次交谈。</p>
+<h1 id="_1">服务端：</h1>
+<ol>
+<li>建立服务端的监听。服务器端先初始化Socket，设置端口绑定(bind)和地址配置，对端口进行监听(listen)<br />
+  a. ServerSocket serverSocket = new ServerSocket(); <br />
+  b. serverSocket.bind(new InetSocketAddress("localhost",8888));</li>
+<li>等待并接收连接请求。调用accept阻塞，等待客户端连接。<br />
+  a. serverSocket.accept();</li>
+<li>读取客户端数据 <br />
+  a. DataInputStream input = new DataInputStream(socket.getInputStream());<br />
+  b. String clientInputStr = input.readUTF();这里要注意和客户端输出流的写方法对应,否则会抛 EOFException  </li>
+<li>向客户端回复信息<br />
+  a. DataOutputStream out = new DataOutputStream(socket.getOutputStream());<br />
+  b. String s = new BufferedReader(new InputStreamReader(System.in)).readLine();<br />
+  c. out.writeUTF(s);</li>
+<li>关闭流，关闭Socket</li>
+</ol>
+<h1 id="_2">客户端：</h1>
+<ol>
+<li>服务器端先初始化Socket，创建连接connect()<br />
+  a. ServerSocket serverSocket = new ServerSocket(); <br />
+  b. serverSocket.bind(new InetSocketAddress("localhost",8888));</li>
+<li>向服务端发送信息（与服务器端类似）</li>
+<li>读取服务端数据（与服务器端类似）</li>
+<li>关闭流，关闭Socket（与服务器端类似）</li>
+</ol>
+<p>参考地址：<a href="http://blog.csdn.net/defonds/article/details/7971259">This link</a></p>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2017 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2017-07-24 14:48:39</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

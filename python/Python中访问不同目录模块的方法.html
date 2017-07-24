@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>Python中的不同目录的访问 - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#python">python</a>&nbsp;&#187;&nbsp;Python中的不同目录的访问
+    <span class="updated">Page Updated&nbsp;
+      2017 07.18
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">Python中的不同目录的访问</div>
+
+  <p>python包含子目录中的模块方法比较简单，关键是能够在sys.path里面找到通向模块文件的路径。<br />
+下面将具体介绍几种常用情况:<br />
+1. 主程序与模块程序在同一目录下:<br />
+如下面程序结构:<br />
+`-- src<br />
+    |-- mod1.py<br />
+    `-- test1.py<br />
+    若在程序test1.py中导入模块mod1, 则直接使用import mod1或from mod1 import *;</p>
+<ol>
+<li>
+<p>主程序所在目录是模块所在目录的父(或祖辈)目录<br />
+如下面程序结构:<br />
+`-- src<br />
+    |-- mod1.py<br />
+    |-- mod2<br />
+    |   <code>-- mod2.py</code>-- test1.py<br />
+    若在程序test1.py中导入模块mod2, 需要在mod2文件夹中建立空文件__init__.py文件(也可以在该文件中自定义输出模块接口); 然后使用 from mod2.mod2 import * 或import mod2.mod2.</p>
+</li>
+<li>
+<p>主程序导入上层目录中模块或其他目录(平级)下的模块<br />
+如下面程序结构:<br />
+`-- src<br />
+    |-- mod1.py<br />
+    |-- mod2<br />
+    |   <code>-- mod2.py
+    |-- sub
+    |</code>-- test2.py<br />
+    `-- test1.py<br />
+    若在程序test2.py中导入模块mod1和mod2。首先需要在mod2下建立__init__.py文件(同(2))，src下不必建立该文件。然后调用方式如下:<br />
+   下面程序执行方式均在程序文件所在目录下执行，如test2.py是在cd sub;之后执行python test2.py<br />
+而test1.py是在cd src;之后执行python test1.py; 不保证在src目录下执行python sub/test2.py成功。<br />
+   import sys<br />
+   sys.path.append("..")<br />
+   import mod1<br />
+   import mod2.mod2</p>
+</li>
+<li>
+<p>从3可以看出，导入模块关键是能够根据sys.path环境变量的值，找到具体模块的路径。这里仅介绍上面三种简单情况。</p>
+</li>
+</ol>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2017 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2017-07-24 14:48:39</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

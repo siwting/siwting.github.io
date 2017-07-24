@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>查询续费订单缺失的情况 - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#查询数据">查询数据</a>&nbsp;&#187;&nbsp;<a href="/#查询数据-续费订单">续费订单</a>&nbsp;&#187;&nbsp;查询续费订单缺失的情况
+    <span class="updated">Page Updated&nbsp;
+      2017-07-24 10:30:48
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">查询续费订单缺失的情况</div>
+
+  <div class="hlcode"><pre><span class="n">SELECT</span> <span class="n">o</span><span class="p">.</span><span class="o">*</span> <span class="n">from</span> <span class="n">db_order_details</span> <span class="n">o</span>
+<span class="n">LEFT</span> <span class="n">JOIN</span> <span class="n">db_order_renew</span> <span class="n">r</span> <span class="n">on</span> <span class="n">o</span><span class="p">.</span><span class="n">order_id</span><span class="o">=</span><span class="n">r</span><span class="p">.</span><span class="n">order_id</span> 
+<span class="n">WHERE</span> <span class="n">r</span><span class="p">.</span><span class="n">id</span> <span class="n">is</span> <span class="n">null</span> <span class="n">and</span> <span class="n">o</span><span class="p">.</span><span class="n">product_no</span> <span class="n">in</span><span class="p">(</span><span class="err">&#39;</span><span class="n">AJ010</span><span class="sc">&#39;,&#39;</span><span class="n">AJ008</span><span class="err">&#39;</span><span class="p">);</span>
+
+<span class="o">--</span> <span class="err">上面语句执行后，出现的</span><span class="mi">3</span><span class="err">个订单的实际情况如下：</span>
+<span class="o">--</span> <span class="n">XJ1704204387</span> <span class="err">拒收</span>
+<span class="n">SELECT</span> <span class="o">*</span> <span class="n">from</span> <span class="n">db_order</span> <span class="n">WHERE</span> <span class="n">order_id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">XJ1704204387</span><span class="err">&#39;</span>
+
+<span class="o">--</span> <span class="n">XJ1707011622</span> <span class="err">没有查到有我们的设备，但有续费订单</span>
+<span class="n">SELECT</span> <span class="o">*</span> <span class="n">from</span> <span class="n">db_order</span> <span class="n">WHERE</span> <span class="n">order_id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">XJ1707011622</span><span class="err">&#39;</span>
+<span class="n">SELECT</span> <span class="o">*</span> <span class="n">from</span> <span class="n">db_order</span> <span class="n">WHERE</span> <span class="n">cust_number</span><span class="o">=</span><span class="err">&#39;</span><span class="n">K16091700675</span><span class="err">&#39;</span><span class="p">;</span>
+
+<span class="n">SELECT</span> <span class="o">*</span> <span class="n">from</span> <span class="n">db_device_order</span> <span class="n">WHERE</span> <span class="n">order_id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">XJ1707011622</span><span class="err">&#39;</span>
+
+<span class="o">--</span> <span class="n">XJ1707030628</span> <span class="err">没有查到有我们的设备，但有续费订单</span>
+<span class="n">SELECT</span> <span class="o">*</span> <span class="n">from</span> <span class="n">db_order</span> <span class="n">WHERE</span> <span class="n">order_id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">XJ1707030628</span><span class="err">&#39;</span><span class="p">;</span>
+<span class="n">SELECT</span> <span class="o">*</span> <span class="n">from</span> <span class="n">db_order</span> <span class="n">WHERE</span> <span class="n">cust_number</span><span class="o">=</span><span class="err">&#39;</span><span class="n">K00000184105</span><span class="err">&#39;</span><span class="p">;</span>
+<span class="n">SELECT</span> <span class="o">*</span> <span class="n">from</span> <span class="n">db_device_order</span> <span class="n">WHERE</span> <span class="n">order_id</span><span class="o">=</span><span class="err">&#39;</span><span class="n">XJ1707030628</span><span class="err">&#39;</span>
+</pre></div>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2017 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2017-07-24 14:48:39</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
