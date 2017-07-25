@@ -20,3 +20,10 @@
 
 ##### SpringMVC
 - [Controller和RestController](?file=003-SpringMVC/001-Controller和RestController "Controller和RestController")
+
+##### MySQL
+- [允许远程访问](?file=004-MySQL/001-允许远程访问 "允许远程访问")
+- [日期处理](?file=004-MySQL/002-日期处理 "日期处理")
+- [排序规则不一致，导致查询特别慢](?file=004-MySQL/003-排序规则不一致，导致查询特别慢 "排序规则不一致，导致查询特别慢")
+- [批量更新](?file=004-MySQL/004-批量更新 "批量更新")
+- [开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled](?file=004-MySQL/005-开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled "开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled")
