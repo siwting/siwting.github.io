@@ -5,8 +5,8 @@
 可以用Div+Css来实现<textarea>的效果，具体如下：
 首先写一个<div>
 
-`
-  <d i v id="remarks" class="audit-textarea" contenteditable="true" data-text="输入备注"></d i v>
+```
+  <div id="remarks" class="audit-textarea" contenteditable="true" data-text="输入备注"></div>
   然后写一个样式
   .audit-textarea{
       width: 100%;
@@ -20,5 +20,5 @@
       -webkit-user-modify: read-write-plaintext-only;
   }
 
-`
+```
 大功告成，具体效果请自行测试
