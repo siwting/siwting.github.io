@@ -18,6 +18,7 @@
 
 ##### javascript
 - [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
+- [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
 
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
