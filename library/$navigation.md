@@ -16,8 +16,16 @@
 - [开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled](?file=004-MySQL/005-开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled "开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled")
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
 
+##### javascript
+- [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
+- [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
+
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
+
+##### 工作感悟
+- [如何汇报工作进度](?file=035-工作感悟/001-如何汇报工作进度 "如何汇报工作进度")
+- [写代码应该关注哪些点](?file=035-工作感悟/002-写代码应该关注哪些点 "写代码应该关注哪些点")
 
 ##### 测试
 - [文本框验证清单](?file=060-测试/001-文本框验证清单 "文本框验证清单")
