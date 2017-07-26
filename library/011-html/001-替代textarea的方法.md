@@ -6,7 +6,7 @@
 首先写一个<div>
 
 `
-  <div id="remarks" class="audit-textarea" contenteditable="true" data-text="输入备注"></div>
+  <d i v id="remarks" class="audit-textarea" contenteditable="true" data-text="输入备注"></d i v>
   然后写一个样式
   .audit-textarea{
       width: 100%;
