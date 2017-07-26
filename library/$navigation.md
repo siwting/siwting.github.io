@@ -20,12 +20,18 @@
 - [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
 - [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
 
+##### html
+- [替代textarea的方法](?file=011-html/001-替代textarea的方法 "替代textarea的方法")
+
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
 
 ##### 工作感悟
 - [如何汇报工作进度](?file=035-工作感悟/001-如何汇报工作进度 "如何汇报工作进度")
 - [写代码应该关注哪些点](?file=035-工作感悟/002-写代码应该关注哪些点 "写代码应该关注哪些点")
+
+##### session
+- [session实现原理](?file=036-session/001-session实现原理 "session实现原理")
 
 ##### 测试
 - [文本框验证清单](?file=060-测试/001-文本框验证清单 "文本框验证清单")
