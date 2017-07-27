@@ -23,12 +23,18 @@
 ##### html
 - [替代textarea的方法](?file=011-html/001-替代textarea的方法 "替代textarea的方法")
 
+##### git
+- [在github上建新的分支](?file=015-git/002-在github上建新的分支 "在github上建新的分支")
+
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
 
 ##### js
 - **事件**
     - [鼠标事件](?file=022-js/001-事件/001-鼠标事件 "鼠标事件")
+
+##### 缓存
+- [buff和cache的区别](?file=033-缓存/001-buff和cache的区别 "buff和cache的区别")
 
 ##### 工作感悟
 - [如何汇报工作进度](?file=035-工作感悟/001-如何汇报工作进度 "如何汇报工作进度")
