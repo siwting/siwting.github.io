@@ -26,8 +26,9 @@ response.addCookie(cookie);
 
 
 ``` java
-
-response.encodeRedirectURL(java.lang.String url) 用于对sendRedirect方法后的url地址进行重写。
-　　response.encodeURL(java.lang.String url)用于对表单action和超链接的url地址进行重写
+    //  用于对sendRedirect方法后的url地址进行重写。
+    response.encodeRedirectURL(java.lang.String url);
+    // 用于对表单action和超链接的url地址进行重写
+    response.encodeURL(java.lang.String url);
 
 ```
