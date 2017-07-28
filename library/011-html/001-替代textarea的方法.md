@@ -5,9 +5,9 @@
 可以用Div+Css来实现textarea的效果，具体如下：
 首先写一个div
 
-```
-  div id="remarks" class="audit-textarea" contenteditable="true" data-text="输入备注" div
-  然后写一个样式
+``` css
+  <div id="remarks" class="audit-textarea" contenteditable="true" data-text="输入备注" div>
+
   .audit-textarea{
       width: 100%;
       min-height:150px;
