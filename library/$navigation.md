@@ -20,6 +20,9 @@
 - [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
 - [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
 
+##### Mybatis
+- [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
+
 ##### html
 - [替代textarea的方法](?file=011-html/001-替代textarea的方法 "替代textarea的方法")
 
