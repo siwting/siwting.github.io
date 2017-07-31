@@ -27,7 +27,8 @@
 - [替代textarea的方法](?file=011-html/001-替代textarea的方法 "替代textarea的方法")
 
 ##### git
-- [在github上建新的分支](?file=015-git/002-在github上建新的分支 "在github上建新的分支")
+- [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
+- [解决开发环境push到测试环境出错](?file=015-git/003-解决开发环境push到测试环境出错 "解决开发环境push到测试环境出错")
 
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
