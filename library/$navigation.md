@@ -49,7 +49,7 @@
 ##### 测试
 - [文本框验证清单](?file=060-测试/001-文本框验证清单 "文本框验证清单")
 - [python](?file=060-测试/002-python "python")
-- [python中w](?file=060-测试/003-python中w "python中w")
+- [python中文件读取](?file=060-测试/003-python中文件读取 "python中文件读取")
 
 ##### 数据查询
 - **客户**
