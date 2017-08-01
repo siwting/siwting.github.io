@@ -4,6 +4,7 @@
 ##### angular
 - [nodejs安装](?file=002-angular/001-nodejs安装 "nodejs安装")
 - [卸载angular-cli](?file=002-angular/002-卸载angular-cli "卸载angular-cli")
+- [DOM操作](?file=002-angular/003-DOM操作 "DOM操作")
 
 ##### SpringMVC
 - [Controller和RestController](?file=003-SpringMVC/001-Controller和RestController "Controller和RestController")
@@ -17,8 +18,8 @@
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
 
 ##### javascript
-- [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
 - [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
+- [substr与substring](?file=005-javascript/003-substr与substring "substr与substring")
 
 ##### Mybatis
 - [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
@@ -27,7 +28,8 @@
 - [替代textarea的方法](?file=011-html/001-替代textarea的方法 "替代textarea的方法")
 
 ##### git
-- [在github上建新的分支](?file=015-git/002-在github上建新的分支 "在github上建新的分支")
+- [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
+- [解决开发环境push到测试环境出错](?file=015-git/003-解决开发环境push到测试环境出错 "解决开发环境push到测试环境出错")
 
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
@@ -42,6 +44,7 @@
 ##### 工作感悟
 - [如何汇报工作进度](?file=035-工作感悟/001-如何汇报工作进度 "如何汇报工作进度")
 - [写代码应该关注哪些点](?file=035-工作感悟/002-写代码应该关注哪些点 "写代码应该关注哪些点")
+- [睡眠模块文档讨论总结](?file=035-工作感悟/003-睡眠模块文档讨论总结 "睡眠模块文档讨论总结")
 
 ##### session
 - [session无法生效的解决办法](?file=036-session/001-session无法生效的解决办法 "session无法生效的解决办法")
@@ -51,6 +54,9 @@
 - [python](?file=060-测试/002-python "python")
 - [python中文件读取](?file=060-测试/003-python中文件读取 "python中文件读取")
 - [Python中re模块的使用](?file=060-测试/004-Python中re模块的使用 "Python中re模块的使用")
+
+##### Ehcache缓存
+- [spring+Mybatis+Ehcache整合](?file=066-Ehcache缓存/001-spring+Mybatis+Ehcache整合 "spring+Mybatis+Ehcache整合")
 
 ##### 数据查询
 - **客户**
