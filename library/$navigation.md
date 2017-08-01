@@ -18,7 +18,6 @@
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
 
 ##### javascript
-- [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
 - [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
 - [substr与substring](?file=005-javascript/003-substr与substring "substr与substring")
 
