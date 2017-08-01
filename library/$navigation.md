@@ -37,6 +37,7 @@
 - [substr与substring](?file=022-js/003-substr与substring "substr与substring")
 - **bootstrap**
     - [表格刷新即数据以及分页初始化](?file=022-js/004-bootstrap/001-表格刷新即数据以及分页初始化 "表格刷新即数据以及分页初始化")
+- [垃圾回收](?file=022-js/005-垃圾回收 "垃圾回收")
 
 ##### 缓存
 - [buff和cache的区别](?file=033-缓存/001-buff和cache的区别 "buff和cache的区别")
