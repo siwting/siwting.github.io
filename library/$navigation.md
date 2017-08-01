@@ -20,6 +20,7 @@
 ##### javascript
 - [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
 - [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
+- [substr与substring](?file=005-javascript/003-substr与substring "substr与substring")
 
 ##### Mybatis
 - [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
