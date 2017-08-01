@@ -7,7 +7,7 @@
   如图：
 
 
-![avatar](http://wx4.sinaimg.cn/mw690/6dad45afgy1fi4keygk1mj216o0j3agg.jpg)
+![avatar](http://wx4.sinaimg.cn/mw1024/6dad45afgy1fi4keygk1mj216o0j3agg.jpg)
 
 
 通过对代码的修改，就可以提交代码了。
