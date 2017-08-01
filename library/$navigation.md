@@ -17,8 +17,6 @@
 - [开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled](?file=004-MySQL/005-开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled "开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled")
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
 
-##### javascript
-
 ##### Mybatis
 - [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
 
@@ -37,6 +35,8 @@
     - [鼠标事件](?file=022-js/001-事件/001-鼠标事件 "鼠标事件")
 - [onclick事件传对象参数](?file=022-js/002-onclick事件传对象参数 "onclick事件传对象参数")
 - [substr与substring](?file=022-js/003-substr与substring "substr与substring")
+- **bootstrap**
+    - [表格刷新即数据以及分页初始化](?file=022-js/004-bootstrap/001-表格刷新即数据以及分页初始化 "表格刷新即数据以及分页初始化")
 
 ##### 缓存
 - [buff和cache的区别](?file=033-缓存/001-buff和cache的区别 "buff和cache的区别")
