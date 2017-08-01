@@ -18,8 +18,6 @@
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
 
 ##### javascript
-- [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
-- [substr与substring](?file=005-javascript/003-substr与substring "substr与substring")
 
 ##### Mybatis
 - [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
@@ -37,6 +35,8 @@
 ##### js
 - **事件**
     - [鼠标事件](?file=022-js/001-事件/001-鼠标事件 "鼠标事件")
+- [onclick事件传对象参数](?file=022-js/002-onclick事件传对象参数 "onclick事件传对象参数")
+- [substr与substring](?file=022-js/003-substr与substring "substr与substring")
 
 ##### 缓存
 - [buff和cache的区别](?file=033-缓存/001-buff和cache的区别 "buff和cache的区别")
