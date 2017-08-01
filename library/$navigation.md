@@ -26,6 +26,7 @@
 ##### git
 - [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
 - [解决开发环境push到测试环境出错](?file=015-git/003-解决开发环境push到测试环境出错 "解决开发环境push到测试环境出错")
+- [在idea中解决git冲突](?file=015-git/004-在idea中解决git冲突 "在idea中解决git冲突")
 
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
