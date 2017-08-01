@@ -4,6 +4,7 @@
 ##### angular
 - [nodejs安装](?file=002-angular/001-nodejs安装 "nodejs安装")
 - [卸载angular-cli](?file=002-angular/002-卸载angular-cli "卸载angular-cli")
+- [DOM操作](?file=002-angular/003-DOM操作 "DOM操作")
 
 ##### SpringMVC
 - [Controller和RestController](?file=003-SpringMVC/001-Controller和RestController "Controller和RestController")
