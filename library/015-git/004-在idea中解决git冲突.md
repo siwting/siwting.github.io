@@ -1,6 +1,6 @@
 ### 在idea 中解决git 冲突
 
-
+##### http://blog.csdn.net/liangyihuai/article/details/52277689
 
   大家在idea中经常遇到代码冲突，这个时候就需要果断的merge 然后开始进行代码修改
 
