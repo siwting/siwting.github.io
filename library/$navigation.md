@@ -17,14 +17,42 @@
 - [开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled](?file=004-MySQL/005-开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled "开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled")
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
 
+##### javascript
+- [在javascript中substr和substring的区别](?file=005-javascript/001-在javascript中substr和substring的区别 "在javascript中substr和substring的区别")
+- [onclick事件传对象参数](?file=005-javascript/002-onclick事件传对象参数 "onclick事件传对象参数")
+
+##### Mybatis
+- [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
+
+##### html
+- [替代textarea的方法](?file=011-html/001-替代textarea的方法 "替代textarea的方法")
+
+##### git
+- [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
+- [解决开发环境push到测试环境出错](?file=015-git/003-解决开发环境push到测试环境出错 "解决开发环境push到测试环境出错")
+
 ##### css
 - [解决z-index设置高度无法生效的问题](?file=021-css/001-解决z-index设置高度无法生效的问题 "解决z-index设置高度无法生效的问题")
 
-##### 工作相关
-- [如何汇报工作进度](?file=035-工作相关/001-如何汇报工作进度 "如何汇报工作进度")
+##### js
+- **事件**
+    - [鼠标事件](?file=022-js/001-事件/001-鼠标事件 "鼠标事件")
+
+##### 缓存
+- [buff和cache的区别](?file=033-缓存/001-buff和cache的区别 "buff和cache的区别")
+
+##### 工作感悟
+- [如何汇报工作进度](?file=035-工作感悟/001-如何汇报工作进度 "如何汇报工作进度")
+- [写代码应该关注哪些点](?file=035-工作感悟/002-写代码应该关注哪些点 "写代码应该关注哪些点")
+- [睡眠模块文档讨论总结](?file=035-工作感悟/003-睡眠模块文档讨论总结 "睡眠模块文档讨论总结")
+
+##### session
+- [session无法生效的解决办法](?file=036-session/001-session无法生效的解决办法 "session无法生效的解决办法")
 
 ##### 测试
 - [文本框验证清单](?file=060-测试/001-文本框验证清单 "文本框验证清单")
+- [python](?file=060-测试/002-python "python")
+- [python中文件读取](?file=060-测试/003-python中文件读取 "python中文件读取")
 
 ##### 数据查询
 - **客户**
