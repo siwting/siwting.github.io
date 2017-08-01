@@ -38,7 +38,7 @@
 </ehcache>
 ```
 
-# 参数说明：
+## 参数说明：
 
 - name: cache的名字，用来识别不同的cache，必须惟一。   
 
@@ -122,7 +122,7 @@ public List<User> getUserList(User user, Map<String, Object> map) {
 ```
 到此spring+mybatis+EHCache配置完成。可以对比在加上@Cacheable(cacheName="userCache")和不加的两种情况下的(l2-l1)的时间，在我本地如果不加用时在40ms左右，加上之后第一次加载是40ms，第二次用时1ms，说明第一次加载的数据已经被放到缓存当中去，可见效率得到极大提升。
 
-# 拓展说明：
+## 拓展说明：
 
 对于清除缓存的方法，ehcache提供了两种，一种是在ehcache.xml中配置的时间过后自动清除，一种是在数据发生变化后触发清除。个人感觉第二种比较好。可以将
  ```Java
