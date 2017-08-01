@@ -1,4 +1,4 @@
-1. substr
+## substr
 
 > 用于提取字符串中介于两个指定下标之间的字符
 
@@ -15,7 +15,7 @@ substring(start,end)
 - 如果 start 或 end 为负数，那么它将被替换为 0。
 
 
-2. substring
+## substring
 
 > 用于返回一个从指定位置开始的指定长度的子字符串
 
