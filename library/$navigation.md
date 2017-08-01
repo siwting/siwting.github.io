@@ -54,6 +54,9 @@
 - [python](?file=060-测试/002-python "python")
 - [python中文件读取](?file=060-测试/003-python中文件读取 "python中文件读取")
 
+##### Ehcache缓存
+- [spring+Mybatis+Ehcache整合](?file=066-Ehcache缓存/001-spring+Mybatis+Ehcache整合 "spring+Mybatis+Ehcache整合")
+
 ##### 数据查询
 - **客户**
     - [查询正常订单同步客户信息](?file=100-数据查询/001-客户/001-查询正常订单同步客户信息 "查询正常订单同步客户信息")
