@@ -37,31 +37,29 @@
             />    
 </ehcache>
 ```
+ 参数说明：
 
+ name: cache的名字，用来识别不同的cache，必须惟一。   
 
-- 参数说明：
+ maxElementsInMemory: 内存管理的缓存元素数量最大限值。   
 
-- name: cache的名字，用来识别不同的cache，必须惟一。   
+ maxElementsOnDisk: 硬盘管理的缓存元素数量最大限值。默认值为0，就是没有限制。   
 
-- maxElementsInMemory: 内存管理的缓存元素数量最大限值。   
+ eternal: 设定元素是否持久话。若设为true，则缓存元素不会过期。   
 
-- maxElementsOnDisk: 硬盘管理的缓存元素数量最大限值。默认值为0，就是没有限制。   
+ overflowToDisk: 设定是否在内存填满的时候把数据转到磁盘上。
 
-- eternal: 设定元素是否持久话。若设为true，则缓存元素不会过期。   
+ timeToIdleSeconds： 设定元素在过期前空闲状态的时间，只对非持久性缓存对象有效。默认值为0,值为0意味着元素可以闲置至无限长时间。   
 
-- overflowToDisk: 设定是否在内存填满的时候把数据转到磁盘上。
+ timeToLiveSeconds: 设定元素从创建到过期的时间。其他与timeToIdleSeconds类似。   
 
-- timeToIdleSeconds： 设定元素在过期前空闲状态的时间，只对非持久性缓存对象有效。默认值为0,值为0意味着元素可以闲置至无限长时间。   
+ diskPersistent: 设定在虚拟机重启时是否进行磁盘存储，默认为false.(我的直觉，对于安全小型应用，宜设为true)。   
 
-- timeToLiveSeconds: 设定元素从创建到过期的时间。其他与timeToIdleSeconds类似。   
+ diskExpiryThreadIntervalSeconds: 访问磁盘线程活动时间。   
 
-- diskPersistent: 设定在虚拟机重启时是否进行磁盘存储，默认为false.(我的直觉，对于安全小型应用，宜设为true)。   
+ diskSpoolBufferSizeMB: 存入磁盘时的缓冲区大小，默认30MB,每个缓存都有自己的缓冲区。   
 
-- diskExpiryThreadIntervalSeconds: 访问磁盘线程活动时间。   
-
-- diskSpoolBufferSizeMB: 存入磁盘时的缓冲区大小，默认30MB,每个缓存都有自己的缓冲区。   
-
-- memoryStoreEvictionPolicy: 元素逐出缓存规则。共有三种，Recently Used (LRU)最近最少使用，为默认。 First In First Out (FIFO)，先进先出。Less Frequently Used(specified as LFU)最少使用
+ memoryStoreEvictionPolicy: 元素逐出缓存规则。共有三种，Recently Used (LRU)最近最少使用，为默认。 First In First Out (FIFO)，先进先出。Less Frequently Used(specified as LFU)最少使用
 
 4. 配置applicationContext-ehcache.xml
 
