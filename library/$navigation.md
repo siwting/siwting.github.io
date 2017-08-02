@@ -16,9 +16,13 @@
 - [批量更新](?file=004-MySQL/004-批量更新 "批量更新")
 - [开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled](?file=004-MySQL/005-开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled "开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled")
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
+- [页面起始时间选择同一天的时候查询不出结果解决方法](?file=004-MySQL/007-页面起始时间选择同一天的时候查询不出结果解决方法 "页面起始时间选择同一天的时候查询不出结果解决方法")
 
 ##### Mybatis
 - [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
+
+##### idea
+- [idea缓存文件删除方法](?file=007-idea/001-idea缓存文件删除方法 "idea缓存文件删除方法")
 
 ##### html
 - [替代textarea的方法](?file=011-html/001-替代textarea的方法 "替代textarea的方法")
