@@ -60,6 +60,10 @@
 ##### Ehcache缓存
 - [spring+Mybatis+Ehcache整合](?file=066-Ehcache缓存/001-spring+Mybatis+Ehcache整合 "spring+Mybatis+Ehcache整合")
 
+##### 数据库
+- **连接池**
+    - [MySQLNonTransientConnectionException错误](?file=067-数据库/001-连接池/001-MySQLNonTransientConnectionException错误 "MySQLNonTransientConnectionException错误")
+
 ##### 数据查询
 - **客户**
     - [查询正常订单同步客户信息](?file=100-数据查询/001-客户/001-查询正常订单同步客户信息 "查询正常订单同步客户信息")
