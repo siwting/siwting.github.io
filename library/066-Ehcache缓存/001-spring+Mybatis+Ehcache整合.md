@@ -104,7 +104,7 @@
 
 6. 在userServiceImpl.Java中加入通过注解进行配置：
 
- ```Java
+ ```java
  @Cacheable(cacheName="userCache")  <strong>//这里的cacheName要跟ehcache.xml中保持一致</strong>  
 public List<User> getUserList(User user, Map<String, Object> map) {  
    long l1 = new Date().getTime();  
