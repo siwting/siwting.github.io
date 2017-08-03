@@ -4,8 +4,7 @@
 ``` java
 // 通过在webpack.dev.js 中设置
 devServer: {
-
-   compress: true,
+    compress: true,
    // That solved it
    disableHostCheck: true,   
 
