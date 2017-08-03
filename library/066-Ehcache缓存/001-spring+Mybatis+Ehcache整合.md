@@ -62,10 +62,10 @@
  diskSpoolBufferSizeMB: 存入磁盘时的缓冲区大小，默认30MB,每个缓存都有自己的缓冲区。   
 
  memoryStoreEvictionPolicy: 元素逐出缓存规则。共有三种，Recently Used (LRU)最近最少使用，为默认。 First In First Out (FIFO)，先进先出。Less Frequently Used(specified as LFU)最少使用
+
 ```
 
- 4. 配置applicationContext-ehcache.xml
-
+4. 配置applicationContext-ehcache.xml
 ```config
 <?xml version="1.0" encoding="UTF-8"?>  
 <!-- /** * * 缓存配置 *  * */ -->  
