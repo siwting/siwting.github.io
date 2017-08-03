@@ -67,6 +67,7 @@
 ```
 
 4. 配置applicationContext-ehcache.xml
+
 ```config
 <?xml version="1.0" encoding="UTF-8"?>  
 <!-- /** * * 缓存配置 *  * */ -->  
@@ -94,11 +95,13 @@
 ```
 
 5. 在spring-mvc.xml 中加入如下内容，将ehcache相关配置装配到spring容器中：
+
 ```config
    加载ehcache缓存配置文件     
    说明：在这里我遇到了这样一个问题，当使用@Service等注解的方式将类声明到配置文件中时，就需要将缓存配置import到主配置文件中，否则缓存会不起作用    
    如果是通过<bean>声明到配置文件中时，则只需要在web.xml的contextConfigLocation中加入applicationContext-ehcache.xml即可，不过还是推荐使用如下方式吧，因为这样不会有任何问题
 ```
+
 ```config
         <import resource="classpath:applicationContext-ehcache.xml"/>  
 ```
