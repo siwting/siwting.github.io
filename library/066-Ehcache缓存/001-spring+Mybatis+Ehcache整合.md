@@ -40,6 +40,7 @@
 ```
 
  - 参数说明：
+
  ```config
  name: cache的名字，用来识别不同的cache，必须惟一。   
 
@@ -92,7 +93,9 @@
 </beans>
 ```
 
+
 5. 在spring-mvc.xml 中加入如下内容，将ehcache相关配置装配到spring容器中：
+
 ```config
    加载ehcache缓存配置文件     
    说明：在这里我遇到了这样一个问题，当使用@Service等注解的方式将类声明到配置文件中时，就需要将缓存配置import到主配置文件中，否则缓存会不起作用    
@@ -106,7 +109,7 @@
 
 6. 在userServiceImpl.Java中加入通过注解进行配置：
 
- ```java
+```java
  @Cacheable(cacheName="userCache")  <strong>//这里的cacheName要跟ehcache.xml中保持一致</strong>  
 public List<User> getUserList(User user, Map<String, Object> map) {  
    long l1 = new Date().getTime();  
@@ -123,6 +126,7 @@ public List<User> getUserList(User user, Map<String, Object> map) {
    return list;  
 }  
 ```
+
 ```config
  到此spring+mybatis+EHCache配置完成。可以对比在加上@Cacheable(cacheName="userCache")和不加的两种情况下的(l2-l1)的时间，在我本地如果不加用时在40ms左右，加上之后第一次加载是40ms，第二次用时1ms，说明第一次加载的数据已经被放到缓存当中去，可见效率得到极大提升。
 
@@ -130,15 +134,16 @@ public List<User> getUserList(User user, Map<String, Object> map) {
 
 -对于清除缓存的方法，ehcache提供了两种，一种是在ehcache.xml中配置的时间过后自动清除，一种是在数据发生变化后触发清除。个人感觉第二种比较好。可以将
 ```
- ```java
+
+```java
 @TriggersRemove(cacheName="userCache",removeAll=true)
 @TriggersRemove(cacheName="userCache", when=When.AFTER_METHOD_INVOCATION, removeAll=true)
- ```
- ```config
+```
+```config
  这句代码加到service里面的添加、删除、修改方法上。这样只要这几个方法有调用，缓存自动清除。
  对于Mybatis更简单，对不想缓存的sql结果，可以再后面添加useCache="false"即可：
- ```
- ```sql
+```
+```sql
      <select id="getLabelValueList" resultMap="BaseResultMap" parameterType="com.Product" useCache="false">  
      select Id, Name  
      from Product  
@@ -148,4 +153,4 @@ public List<User> getUserList(User user, Map<String, Object> map) {
      </if>  
      order by Id  
      </select>  
- ```
+```
