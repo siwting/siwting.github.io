@@ -58,6 +58,9 @@
 - [amWiki与流程图](?file=006-markdown/03-amWiki与流程图 "amWiki与流程图")
 - [Atom对Markdown的原生支持](?file=006-markdown/05-Atom对Markdown的原生支持 "Atom对Markdown的原生支持")
 
+##### Python
+- [类的定义](?file=007-Python/001-类的定义 "类的定义")
+
 ##### git
 - [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
 - [解决开发环境push到测试环境出错](?file=015-git/003-解决开发环境push到测试环境出错 "解决开发环境push到测试环境出错")
