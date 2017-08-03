@@ -93,22 +93,17 @@
 </beans>
 ```
 
-
 5. 在spring-mvc.xml 中加入如下内容，将ehcache相关配置装配到spring容器中：
-
 ```config
    加载ehcache缓存配置文件     
    说明：在这里我遇到了这样一个问题，当使用@Service等注解的方式将类声明到配置文件中时，就需要将缓存配置import到主配置文件中，否则缓存会不起作用    
    如果是通过<bean>声明到配置文件中时，则只需要在web.xml的contextConfigLocation中加入applicationContext-ehcache.xml即可，不过还是推荐使用如下方式吧，因为这样不会有任何问题
 ```
-
 ```config
         <import resource="classpath:applicationContext-ehcache.xml"/>  
 ```
 
-
 6. 在userServiceImpl.Java中加入通过注解进行配置：
-
 ```java
  @Cacheable(cacheName="userCache")  <strong>//这里的cacheName要跟ehcache.xml中保持一致</strong>  
 public List<User> getUserList(User user, Map<String, Object> map) {  
