@@ -49,9 +49,7 @@
 
 ##### 测试
 - [文本框验证清单](?file=005-测试/001-文本框验证清单 "文本框验证清单")
-- [python](?file=005-测试/002-python "python")
-- [python中文件读取](?file=005-测试/003-python中文件读取 "python中文件读取")
-- [jmeter线程组](?file=005-测试/005-jmeter线程组 "jmeter线程组")
+- [导入功能测试方法](?file=005-测试/002-导入功能测试方法 "导入功能测试方法")
 
 ##### markdown
 - [Markdown快速开始](?file=006-markdown/01-Markdown快速开始 "Markdown快速开始")
@@ -61,6 +59,10 @@
 
 ##### Python
 - [类的定义](?file=007-Python/001-类的定义 "类的定义")
+- [文件的读取](?file=007-Python/002-文件的读取 "文件的读取")
+
+##### jmeter
+- [线程组中的线程属性](?file=008-jmeter/001-线程组中的线程属性 "线程组中的线程属性")
 
 ##### git
 - [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
