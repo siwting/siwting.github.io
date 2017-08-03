@@ -17,6 +17,7 @@
 - [开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled](?file=004-MySQL/005-开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled "开启二进制日志报  This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration and binary logging is enabled")
 - [删除重复数据](?file=004-MySQL/006-删除重复数据 "删除重复数据")
 - [页面起始时间选择同一天的时候查询不出结果解决方法](?file=004-MySQL/007-页面起始时间选择同一天的时候查询不出结果解决方法 "页面起始时间选择同一天的时候查询不出结果解决方法")
+- [远程数据库连接慢](?file=004-MySQL/008-远程数据库连接慢 "远程数据库连接慢")
 
 ##### Mybatis
 - [Mybatis的Sql注入符号](?file=006-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
