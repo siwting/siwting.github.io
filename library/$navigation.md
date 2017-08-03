@@ -39,7 +39,7 @@
 ##### js
 - **事件**
     - [鼠标事件](?file=022-js/001-事件/001-鼠标事件 "鼠标事件")
-- [onclick事件传对象参数](?file=022-js/002-onclick事件传对象参数 "onclick事件传对象参数")
+    - [onclick事件传对象参数](?file=022-js/002-onclick事件传对象参数 "onclick事件传对象参数")
 - [substr与substring](?file=022-js/003-substr与substring "substr与substring")
 - **bootstrap**
     - [表格刷新即数据以及分页初始化](?file=022-js/004-bootstrap/001-表格刷新即数据以及分页初始化 "表格刷新即数据以及分页初始化")
