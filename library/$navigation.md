@@ -21,6 +21,8 @@
     - [Mybatis的Sql注入符号](?file=002-Java/002-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
 - **session**
     - [session无法生效的解决办法](?file=002-Java/003-session/001-session无法生效的解决办法 "session无法生效的解决办法")
+- **Ehcache缓存**
+    - [spring+Mybatis+Ehcache整合](?file=002-Java/004-Ehcache缓存/001-spring+Mybatis+Ehcache整合 "spring+Mybatis+Ehcache整合")
 
 ##### 前端
 - **angular**
@@ -50,10 +52,13 @@
 - [python中文件读取](?file=005-测试/003-python中文件读取 "python中文件读取")
 - [jmeter线程组](?file=005-测试/005-jmeter线程组 "jmeter线程组")
 
+##### markdown
+- [Markdown快速开始](?file=006-markdown/01-Markdown快速开始 "Markdown快速开始")
+- [amWiki与语法高亮](?file=006-markdown/02-amWiki与语法高亮 "amWiki与语法高亮")
+- [amWiki与流程图](?file=006-markdown/03-amWiki与流程图 "amWiki与流程图")
+- [Atom对Markdown的原生支持](?file=006-markdown/05-Atom对Markdown的原生支持 "Atom对Markdown的原生支持")
+
 ##### 缓存
-- [buff和cache的区别](?file=010-缓存/001-buff和cache的区别 "buff和cache的区别")
-- **Ehcache缓存**
-    - [spring+Mybatis+Ehcache整合](?file=010-缓存/002-Ehcache缓存/001-spring+Mybatis+Ehcache整合 "spring+Mybatis+Ehcache整合")
 
 ##### git
 - [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
@@ -68,16 +73,3 @@
 ##### 数据查询
 - **客户**
     - [查询正常订单同步客户信息](?file=100-数据查询/001-客户/001-查询正常订单同步客户信息 "查询正常订单同步客户信息")
-
-##### 学习amWiki
-- [amWiki轻文库简介](?file=999-学习amWiki/01-amWiki轻文库简介 "amWiki轻文库简介")
-- [amWiki功能导图](?file=999-学习amWiki/02-amWiki功能导图 "amWiki功能导图")
-- [如何开始一个新amWiki轻文库](?file=999-学习amWiki/03-如何开始一个新amWiki轻文库 "如何开始一个新amWiki轻文库")
-- [如何编辑amWiki轻文库](?file=999-学习amWiki/04-如何编辑amWiki轻文库 "如何编辑amWiki轻文库")
-- **学习markdown**
-    - [Markdown快速开始](?file=999-学习amWiki/05-学习markdown/01-Markdown快速开始 "Markdown快速开始")
-    - [amWiki与语法高亮](?file=999-学习amWiki/05-学习markdown/02-amWiki与语法高亮 "amWiki与语法高亮")
-    - [amWiki与流程图](?file=999-学习amWiki/05-学习markdown/03-amWiki与流程图 "amWiki与流程图")
-    - [Atom对Markdown的原生支持](?file=999-学习amWiki/05-学习markdown/05-Atom对Markdown的原生支持 "Atom对Markdown的原生支持")
-- [使用测试模块测试接口](?file=999-学习amWiki/06-使用测试模块测试接口 "使用测试模块测试接口")
-- [amWiki转接到任意域名进行接口测试](?file=999-学习amWiki/07-amWiki转接到任意域名进行接口测试 "amWiki转接到任意域名进行接口测试")
