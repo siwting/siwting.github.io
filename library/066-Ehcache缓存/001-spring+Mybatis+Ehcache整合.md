@@ -69,6 +69,7 @@
 4. 配置applicationContext-ehcache.xml
 
 ```config
+
 <?xml version="1.0" encoding="UTF-8"?>  
 <!-- /** * * 缓存配置 *  * */ -->  
 <beans xmlns="http://www.springframework.org/schema/beans"  
