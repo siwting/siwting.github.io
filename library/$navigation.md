@@ -51,6 +51,8 @@
     - [idea缓存文件删除方法](?file=004-工具/001-idea/001-idea缓存文件删除方法 "idea缓存文件删除方法")
 - **webpack**
     - [解决webpack部署的项目dev环境无法通过ip地址访问](?file=004-工具/002-webpack/001-解决webpack部署的项目dev环境无法通过ip地址访问 "解决webpack部署的项目dev环境无法通过ip地址访问")
+- **maven**
+    - [定义profile自动切换开发生产环境](?file=004-工具/003-maven/001-定义profile自动切换开发生产环境 "定义profile自动切换开发生产环境")
 
 ##### 测试
 - [文本框验证清单](?file=005-测试/001-文本框验证清单 "文本框验证清单")
