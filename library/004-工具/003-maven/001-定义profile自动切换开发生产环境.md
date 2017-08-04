@@ -1,8 +1,9 @@
-###001-定义profile自动切换开发生产环境
+### 001-定义profile自动切换开发生产环境
 
 
 
 在POM.xml中配置3个profile，对应项目所处的3个不同的环境-dev, test, production, 可以在命令行通过mvn package –P${profileId}来让其运行。
+
 
 
 ``` python
