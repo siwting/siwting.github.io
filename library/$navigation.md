@@ -32,6 +32,7 @@
     - [nodejs安装](?file=003-前端/001-angular/001-nodejs安装 "nodejs安装")
     - [卸载angular-cli](?file=003-前端/001-angular/002-卸载angular-cli "卸载angular-cli")
     - [DOM操作](?file=003-前端/001-angular/003-DOM操作 "DOM操作")
+    - [windows下安装Angular2环境包的问题](?file=003-前端/001-angular/004-windows下安装Angular2环境包的问题 "windows下安装Angular2环境包的问题")
 - **html**
     - [替代textarea的方法](?file=003-前端/002-html/001-替代textarea的方法 "替代textarea的方法")
 - **css**
@@ -82,8 +83,8 @@
 - [如何汇报工作进度](?file=020-工作/002-如何汇报工作进度 "如何汇报工作进度")
 - [睡眠模块文档讨论总结](?file=020-工作/003-睡眠模块文档讨论总结 "睡眠模块文档讨论总结")
 
+##### 数据库
+
 ##### 数据查询
 - **客户**
     - [查询正常订单同步客户信息](?file=100-数据查询/001-客户/001-查询正常订单同步客户信息 "查询正常订单同步客户信息")
-
-##### 学习amWiki
