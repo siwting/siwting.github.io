@@ -12,7 +12,9 @@
     - [页面起始时间选择同一天的时候查询不出结果解决方法](?file=001-数据库/001-MySQL/007-页面起始时间选择同一天的时候查询不出结果解决方法 "页面起始时间选择同一天的时候查询不出结果解决方法")
     - [远程数据库连接慢](?file=001-数据库/001-MySQL/008-远程数据库连接慢 "远程数据库连接慢")
 - **连接池**
-    - [MySQLNonTransientConnectionException错误](?file=001-数据库/010-连接池/001-MySQLNonTransientConnectionException错误 "MySQLNonTransientConnectionException错误")
+    - [连接超时异常](?file=001-数据库/010-连接池/001-连接超时异常 "连接超时异常")
+- **各种错误码解决方法**
+    - [1418错误](?file=001-数据库/011-各种错误码解决方法/001-1418错误 "1418错误")
 
 ##### Java
 - **SpringMVC**
@@ -25,12 +27,16 @@
     - [spring+Mybatis+Ehcache整合](?file=002-Java/004-Ehcache缓存/001-spring+Mybatis+Ehcache整合 "spring+Mybatis+Ehcache整合")
 - **性能优化**
     - [用移位操作代替乘法和除法](?file=002-Java/005-性能优化/001-用移位操作代替乘法和除法 "用移位操作代替乘法和除法")
+    - [for循环性能优化](?file=002-Java/005-性能优化/002-for循环性能优化 "for循环性能优化")
+- **四舍五入方式**
+    - [double四舍五入并保留两位小数的方法](?file=002-Java/006-四舍五入方式/001-double四舍五入并保留两位小数的方法 "double四舍五入并保留两位小数的方法")
 
 ##### 前端
 - **angular**
     - [nodejs安装](?file=003-前端/001-angular/001-nodejs安装 "nodejs安装")
     - [卸载angular-cli](?file=003-前端/001-angular/002-卸载angular-cli "卸载angular-cli")
     - [DOM操作](?file=003-前端/001-angular/003-DOM操作 "DOM操作")
+    - [windows下安装Angular2环境包的问题](?file=003-前端/001-angular/004-windows下安装Angular2环境包的问题 "windows下安装Angular2环境包的问题")
 - **html**
     - [替代textarea的方法](?file=003-前端/002-html/001-替代textarea的方法 "替代textarea的方法")
 - **css**
@@ -50,6 +56,10 @@
     - [idea缓存文件删除方法](?file=004-工具/001-idea/001-idea缓存文件删除方法 "idea缓存文件删除方法")
 - **webpack**
     - [解决webpack部署的项目dev环境无法通过ip地址访问](?file=004-工具/002-webpack/001-解决webpack部署的项目dev环境无法通过ip地址访问 "解决webpack部署的项目dev环境无法通过ip地址访问")
+- **maven**
+    - [定义profile自动切换开发生产环境](?file=004-工具/003-maven/001-定义profile自动切换开发生产环境 "定义profile自动切换开发生产环境")
+- **wechat**
+    - [如何配置微信测试环境](?file=004-工具/004-wechat/001-如何配置微信测试环境 "如何配置微信测试环境")
 
 ##### 测试
 - [文本框验证清单](?file=005-测试/001-文本框验证清单 "文本框验证清单")
@@ -70,6 +80,9 @@
 - [Jmeter体系机构](?file=008-jmeter/002-Jmeter体系机构 "Jmeter体系机构")
 - [简单的接口测试的步骤](?file=008-jmeter/003-简单的接口测试的步骤 "简单的接口测试的步骤")
 
+##### 网络安全
+- [同源策略](?file=009-网络安全/001-同源策略 "同源策略")
+
 ##### git
 - [在git上建新的分支](?file=015-git/002-在git上建新的分支 "在git上建新的分支")
 - [解决开发环境push到测试环境出错](?file=015-git/003-解决开发环境push到测试环境出错 "解决开发环境push到测试环境出错")
@@ -79,9 +92,6 @@
 - [设计与编程规范](?file=020-工作/001-设计与编程规范 "设计与编程规范")
 - [如何汇报工作进度](?file=020-工作/002-如何汇报工作进度 "如何汇报工作进度")
 - [睡眠模块文档讨论总结](?file=020-工作/003-睡眠模块文档讨论总结 "睡眠模块文档讨论总结")
-
-##### webpack
-- [解决webpack部署的项目dev环境无法通过ip地址访问](?file=022-webpack/001-解决webpack部署的项目dev环境无法通过ip地址访问 "解决webpack部署的项目dev环境无法通过ip地址访问")
 
 ##### 数据查询
 - **客户**
