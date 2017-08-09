@@ -28,3 +28,31 @@
    }
 
 ```
+
+####### 但是这样做是有问题的，因为touchmove 方法可能被多次触发，也就是调用多次下拉刷新的方法，下面就来细说解决方法
+
+
+ ```  JavaScript
+ // 判断如果pullLock 大于1 就不执行调用数据库取最新数据的方法
+ if(this.pullLock > 1){
+      return;
+    }
+ // 进入方法后把pullLock +1    
+    this.pullLock += 1;
+
+ ```
+
+
+####### 以为这样就可以避免 touchmove  方法被多次触发的吗？
+
+
+ ```  JavaScript
+ // 需要通过定时任务，锁住方法
+ setPullLock() {
+   let timeoutId = setTimeout(() => {
+     this.pullLock = 1 ;
+   }, 500);
+ }
+
+ ```
+### 最后就Ok了。
