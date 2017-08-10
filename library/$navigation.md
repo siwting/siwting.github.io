@@ -22,6 +22,7 @@
     - [Controller和RestController](?file=002-Java/001-SpringMVC/001-Controller和RestController "Controller和RestController")
 - **Mybatis**
     - [Mybatis的Sql注入符号](?file=002-Java/002-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
+    - [mybatis联合查询](?file=002-Java/002-Mybatis/002-mybatis联合查询 "mybatis联合查询")
 - **session**
     - [session无法生效的解决办法](?file=002-Java/003-session/001-session无法生效的解决办法 "session无法生效的解决办法")
 - **Ehcache缓存**
@@ -100,3 +101,5 @@
 ##### 数据查询
 - **客户**
     - [查询正常订单同步客户信息](?file=100-数据查询/001-客户/001-查询正常订单同步客户信息 "查询正常订单同步客户信息")
+
+##### 学习amWiki
