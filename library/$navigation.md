@@ -23,6 +23,7 @@
     - [Controller和RestController](?file=002-Java/001-SpringMVC/001-Controller和RestController "Controller和RestController")
 - **Mybatis**
     - [Mybatis的Sql注入符号](?file=002-Java/002-Mybatis/001-Mybatis的Sql注入符号 "Mybatis的Sql注入符号")
+    - [mybatis联合查询](?file=002-Java/002-Mybatis/002-mybatis联合查询 "mybatis联合查询")
 - **session**
     - [session无法生效的解决办法](?file=002-Java/003-session/001-session无法生效的解决办法 "session无法生效的解决办法")
 - **Ehcache缓存**
@@ -67,6 +68,8 @@
 ##### 测试
 - [文本框验证清单](?file=005-测试/001-文本框验证清单 "文本框验证清单")
 - [导入功能测试方法](?file=005-测试/002-导入功能测试方法 "导入功能测试方法")
+- [接口测试](?file=005-测试/003-接口测试 "接口测试")
+- [web项目前台后端的了解](?file=005-测试/004-web项目前台后端的了解 "web项目前台后端的了解")
 
 ##### markdown
 - [Markdown快速开始](?file=006-markdown/01-Markdown快速开始 "Markdown快速开始")
@@ -99,3 +102,5 @@
 ##### 数据查询
 - **客户**
     - [查询正常订单同步客户信息](?file=100-数据查询/001-客户/001-查询正常订单同步客户信息 "查询正常订单同步客户信息")
+
+##### 学习amWiki
