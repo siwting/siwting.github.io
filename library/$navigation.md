@@ -83,6 +83,7 @@
 ##### Python
 - [类的定义](?file=007-Python/001-类的定义 "类的定义")
 - [文件的读取](?file=007-Python/002-文件的读取 "文件的读取")
+- [导出github上面issues](?file=007-Python/003-导出github上面issues "导出github上面issues")
 
 ##### jmeter
 - [线程组中的线程属性](?file=008-jmeter/001-线程组中的线程属性 "线程组中的线程属性")
